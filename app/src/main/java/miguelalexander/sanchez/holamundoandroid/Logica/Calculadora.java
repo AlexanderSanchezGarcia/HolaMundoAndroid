@@ -1,4 +1,4 @@
-package miguelalexander.sanchez.holamundoandroid;
+package miguelalexander.sanchez.holamundoandroid.Logica;
 
 public class Calculadora {
     public void sum() {
