@@ -43,12 +43,12 @@ public class SumaActivity extends AppCompatActivity {
         int total = 0;
         if(editTextX.getText().toString() != null) {
             if(isEntero(editTextX.getText().toString())) {
-                total = getEntero(editTextX.getText().toString())
+                total += getEntero(editTextX.getText().toString());
             }
         }
         if(editTextY.getText().toString() != null) {
             if(isEntero(editTextY.getText().toString())) {
-                total = getEntero(editTextY.getText().toString())
+                total += getEntero(editTextY.getText().toString());
             }
         }
         editTextTotal.setText(String.format("%d", total), TextView.BufferType.SPANNABLE);
@@ -66,7 +66,7 @@ public class SumaActivity extends AppCompatActivity {
     private boolean isEntero(String entero) {
         try {
             if(entero == null || entero.length() == 0) {
-                return false
+                return false;
             }
             Integer.parseInt(entero);
             return true;
