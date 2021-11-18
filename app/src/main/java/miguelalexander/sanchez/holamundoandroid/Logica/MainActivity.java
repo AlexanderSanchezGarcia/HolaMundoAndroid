@@ -1,4 +1,4 @@
-package miguelalexander.sanchez.holamundoandroid;
+package miguelalexander.sanchez.holamundoandroid.Logica;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,10 +7,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import miguelalexander.sanchez.holamundoandroid.R;
+
 public class MainActivity extends AppCompatActivity {
 
     private Button buttonSuma;
     private Button buttonResta;
+    private Button buttonMulti;
+    private Button buttonDivision;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +35,20 @@ public class MainActivity extends AppCompatActivity {
                 abrirResta();
             }
         });
+        buttonMulti = findViewById(R.id.buttonMulti);
+        buttonMulti.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                abrirMulti();
+            }
+        });
+        buttonDivision = findViewById(R.id.buttonDivision);
+        buttonDivision.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                abrirDivision();
+            }
+        });
     }
 
     private void abrirSuma() {
@@ -39,6 +57,14 @@ public class MainActivity extends AppCompatActivity {
     }
     private void abrirResta() {
         Intent intent = new Intent(this, RestaActivity.class);
+        startActivity(intent);
+    }
+    private void abrirMulti() {
+        Intent intent = new Intent(this, MultiActivity.class);
+        startActivity(intent);
+    }
+    private void abrirDivision() {
+        Intent intent = new Intent(this, DivisionActivity.class);
         startActivity(intent);
     }
 }

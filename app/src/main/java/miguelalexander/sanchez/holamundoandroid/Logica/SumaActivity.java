@@ -1,4 +1,4 @@
-package miguelalexander.sanchez.holamundoandroid;
+package miguelalexander.sanchez.holamundoandroid.Logica;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import miguelalexander.sanchez.holamundoandroid.R;
 
 public class SumaActivity extends AppCompatActivity {
 

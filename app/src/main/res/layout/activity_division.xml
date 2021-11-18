@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Logica.MainActivity">
+    tools:context=".Logica.DivisionActivity">
 
     <LinearLayout
         android:layout_width="409dp"
@@ -15,28 +15,25 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <Button
-            android:id="@+id/buttonSuma"
+        <EditText
+            android:id="@+id/editTextNumberXD"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Suma" />
+            android:ems="10"
+            android:inputType="number" />
 
-        <Button
-            android:id="@+id/buttonResta"
+        <EditText
+            android:id="@+id/editTextNumberYD"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Resta" />
+            android:ems="10"
+            android:inputType="number" />
 
-        <Button
-            android:id="@+id/buttonMulti"
+        <EditText
+            android:id="@+id/editTextNumberTotalD"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Multiplicación" />
-
-        <Button
-            android:id="@+id/buttonDivision"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="División" />
+            android:ems="10"
+            android:inputType="number" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
