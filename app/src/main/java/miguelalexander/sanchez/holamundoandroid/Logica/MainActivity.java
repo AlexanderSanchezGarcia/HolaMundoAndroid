@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     private Button buttonResta;
     private Button buttonMulti;
     private Button buttonDivision;
+    private Button buttonRad;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +50,18 @@ public class MainActivity extends AppCompatActivity {
                 abrirDivision();
             }
         });
+        buttonRad = findViewById(R.id.buttonRad);
+        buttonRad.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                abrirRadianes();
+            }
+        });
+    }
+
+    protected void onStart() {
+        super.onStart();
+
     }
 
     private void abrirSuma() {
@@ -65,6 +78,10 @@ public class MainActivity extends AppCompatActivity {
     }
     private void abrirDivision() {
         Intent intent = new Intent(this, DivisionActivity.class);
+        startActivity(intent);
+    }
+    private void abrirRadianes() {
+        Intent intent = new Intent(this, RadianesActivity.class);
         startActivity(intent);
     }
 }

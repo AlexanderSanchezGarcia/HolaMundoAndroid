@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 import miguelalexander.sanchez.holamundoandroid.R;
 
+
 public class SumaActivity extends AppCompatActivity {
 
     EditText editTextX;
